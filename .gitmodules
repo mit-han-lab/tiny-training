@@ -1,0 +1,3 @@
+[submodule "third_party/tvm-hack"]
+	path = third_party/tvm-hack
+	url = https://github.com/Lyken17/tvm-hack

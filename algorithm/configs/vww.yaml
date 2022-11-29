@@ -1,0 +1,15 @@
+data_provider:
+  root: /dataset/vww-s256
+  num_classes: 2
+
+run_config:  # reduce # epochs for vww; otherwise very slow
+  # learning rate
+  n_epochs: 10
+  bs256_lr: 0.01
+  warmup_epochs: 1
+  # optimizer
+  optimizer_name: sgd
+  eval_per_epochs: 1
+
+net_config:
+  net_name: mbv2-w0.35

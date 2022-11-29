@@ -1,0 +1,12 @@
+data_provider:
+  root: /home/jilin/dataset/flowers102
+  num_classes: 102
+
+run_config:
+  # learning rate
+  bs256_lr: 0.01
+  # optimizer
+  optimizer_name: sgd
+
+net_config:
+  net_name: mbv2-w0.35

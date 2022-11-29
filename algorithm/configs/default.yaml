@@ -1,0 +1,59 @@
+run_dir: null
+manual_seed: 0
+evaluate: false
+ray_tune: 0  # ray tuning
+resume: 0
+
+data_provider:
+  dataset: image_folder
+  root: null
+  resize_scale: 0.08
+  color_aug: 0.4
+  base_batch_size: 64
+  n_worker: 8
+  image_size: 128
+  num_classes: null
+
+run_config:
+  # learning rate
+  n_epochs: 50
+  base_lr: 0.025
+  bs256_lr: null  # Notice: if this one is not None, it will overwrite base_lr
+  warmup_epochs: 5
+  warmup_lr: 0
+  lr_schedule_name: cosine
+  # wd
+  weight_decay: 0  # no wd for training
+  no_wd_keys: ['norm', 'bias']
+  # optimizer
+  optimizer_name: sgd
+  bias_only: 0
+  fc_only: 0
+  fc_lr10: 0
+  # eval sparsely
+  eval_per_epochs: 10
+  # grid search fine-tuning
+  grid_output: null
+  grid_ckpt_path: null
+  # partial blocks for fp32
+  n_block_update: -1
+
+net_config:
+  net_name: null
+  pretrained: false
+  cls_head: linear
+  dropout: 0.
+  mcu_head_type: fp
+
+backward_config:  # for partial backward
+  enable_backward_config: 0
+  n_bias_update: null  # how many conv to update the bias
+  n_weight_update: null   # how many weights to update (smaller than n_bias_update)
+  weight_update_ratio: null  # how many weights along input channels are updated (also support int number)
+  weight_select_criteria: magnitude+
+  # mbv2
+  pw1_weight_only: 0  # only update the weight of the first pointwise conv (since it has smaller input act.)
+  manual_weight_idx: null
+  quantize_gradient: 0
+  freeze_fc: 0
+  train_scale: 0
