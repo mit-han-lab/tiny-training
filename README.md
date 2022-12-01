@@ -29,7 +29,7 @@ Our work contains three parts to achieve efficient on-device training:
 2. Compile-time autodiff and system support for sparse update (system)
 3. Codegen with TinyEngine backend (system)
 
-If you are interested in the full-stack optimization of the system, you can go over each step one by one. If you are only interested in building a tiny training demo, you may directly refer to the [Tiny Training Engine](https://github.com/mit-han-lab/tinyengine/tree/dev/training_code_gen/tutorial/training) for the demo setup.
+If you are interested in the full-stack optimization of the system, you can go over each step one by one. If you are only interested in building a tiny training demo, you may directly refer to [Tiny Training Engine](https://github.com/mit-han-lab/tinyengine/tree/master/tutorial/training) for the demo setup.
 
 ## 1. Quantization-aware Scaling (QAS) and Sparse Update
 
@@ -57,7 +57,7 @@ The code related to compilation, autodiff, and system support for sparse update 
 
 ## 3. Codegen with TinyEngine Backend
 
-After obtaining the JSON representation of training graphs, the next step is to follow the [tiny-engine training tutorial](https://github.com/mit-han-lab/tinyengine/tree/dev/training_code_gen/tutorial/training) to deploy the model to the MCU to compile the demo shown at the beginning. Our optimized kernels and co-designs not only enable training under 256KB but also achieve faster speed than conventional implementations such as TF-Lite.
+After obtaining the JSON representation of training graphs, the next step is to follow the [tutorial in Tiny Training Engine](https://github.com/mit-han-lab/tinyengine/tree/master/tutorial/training) to deploy the model to the MCU to compile the demo shown at the beginning. Our optimized kernels and co-designs not only enable training under 256KB but also achieve faster speed than conventional implementations such as TF-Lite.
 
 ![](figures/latency_peakmem_comparison.png)
 
