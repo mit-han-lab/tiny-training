@@ -23,7 +23,7 @@ from .mcunetv3_wrapper import (
 
 def build_quantized_model(net_name="mbv2-w0.35", num_classes=10):
     load_config_from_file("configs/transfer.yaml")
-    configs["net_config"]["net_name"] = "mbv2-w0.35"
+    configs["net_config"]["net_name"] = net_name # "mbv2-w0.35"
     configs["net_config"]["mcu_head_type"] = "quantized"
 
     subnet = build_mcu_model()
