@@ -1,13 +1,14 @@
 # On-Device Training Under 256KB Memory 
 
-###  [[arXiv]](https://arxiv.org/abs/2206.15472) [[Website]](https://tinytraining.mit.edu/) [[YouTube]](https://www.youtube.com/watch?v=XaDCO8YtmBw) [[BiliBili]](https://www.bilibili.com/video/BV1qv4y1d7MV)
+### [[TinyML Project Website]](https://hanlab.mit.edu/projects/tinyml) | [[Paper]](https://arxiv.org/abs/2206.15472) | [[Website]](https://hanlab.mit.edu/projects/mcunetv3) | [[YouTube]](https://www.youtube.com/watch?v=0pUFZYdoMY8) | [[BiliBili]](https://www.bilibili.com/video/BV1qv4y1d7MV)
 
 
-![](figures/mcunetV3_demo_2images.gif)
+![demo_v3](figures/mcunetV3_demo_2images_openmv.gif)
 
 # News
 If you are interested in getting updates, please sign up [here](https://forms.gle/UW1uUmnfk1k6UJPPA) to get notified.
 
+* [03/06/2024] We release a [new demo video](https://www.youtube.com/watch?v=0pUFZYdoMY8) of [On-Device Training Under 256KB Memory](https://arxiv.org/abs/2206.15472).
 * [11/28/2022] Our poster session is on Wed Nov 30 11:00 am-1:00 pm (New Orleans time)@ Hall J #702. Stop by if you are interested!
 * [10/04/2022] Our paper on tiny on-device training is highlighted on the [MIT homepage](http://web.mit.edu/spotlight/learning-edge/)!
 * [09/16/2022] Our paper is accepted to NeurIPS 2022!
@@ -74,8 +75,8 @@ After obtaining the JSON representation of training graphs, the next step is to 
 
 ## Related Work
 
-* [MCUNet: Tiny Deep Learning on IoT Devices](https://mcunet.mit.edu/#mcunetv1) (NeurIPS'20)
-* [MCUNetV2: Memory-Efficient Patch-based Inference for Tiny Deep Learning](https://mcunet.mit.edu/#mcunetv2) (NeurIPS'21)
+* [MCUNet: Tiny Deep Learning on IoT Devices](https://hanlab.mit.edu/projects/mcunet) (NeurIPS'20)
+* [MCUNetV2: Memory-Efficient Patch-based Inference for Tiny Deep Learning](https://hanlab.mit.edu/projects/mcunetv2) (NeurIPS'21)
 * [TinyTL: Reduce Activations, Not Trainable Parameters for Efficient On-Device Learning](https://tinytl.mit.edu/) (NeurIPS'20)
 * [Network Augmentation for Tiny Deep Learning](https://github.com/mit-han-lab/tinyml/raw/master/netaug/figures/fig3.png) (ICLR'22)
 
